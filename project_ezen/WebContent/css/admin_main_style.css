@@ -1,0 +1,253 @@
+/* 초기화 */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Noto Sans KR", sans-serif;
+  list-style: none;
+  color: black;
+}
+
+/* 현재 위치 표시 시작 - 공통된 부분 */
+
+.where {
+  display: flex;
+  width: 100%; min-width: 1080px;
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid rgba(158, 155, 155, 0.5);
+}
+.where > a {
+  width: 50px;
+  background-color: #5467f5;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.where div {
+  width: 200px;
+  border-right: 1px solid rgba(158, 155, 155, 0.5);
+  border-top: 1px solid rgba(158, 155, 155, 0.5);
+  background-color: #fff;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.where div:last-child {
+  color: #5467f5;
+}
+
+/* 현재 위치 표시 끝 */
+     /* 헤더시작 */
+  .top {
+  
+      width: 100%; height: 30px; color: #777777;
+      font-size: 16px; font-weight: normal; text-align: right;
+      background-color: #fff; border-bottom: 1px solid #ddd;      
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 999;
+    }
+    .topMenu {
+      width: 90%; text-align: right;
+      vertical-align: middle; line-height: 30px;  
+    }
+    .topMenu span {
+      padding: 5px;
+    }
+    .topMenu a {
+      margin-bottom: 0px; text-decoration: none; color: #777777;
+    }
+    .topMenu .home {
+      background-image: url(http://bdmp-004.cafe24.com/bizdemo99969/img/common/home01.png);
+      background-repeat: no-repeat;
+    }
+    .home > a {
+      padding: 0px 0px 0px 22px;
+    }
+  .logo img {
+    width: 250px;
+    height: 150px;
+   position: relative;
+   top: -10px;
+
+  }
+  .logo a {
+    text-align: center;
+    color: #58595B;
+    text-decoration: none;
+      }
+      
+  /* 네비 */
+ .navbar {
+   overflow: hidden;
+  background-color: white;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-self: center; 
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: solid 6px #5467F5;
+}
+
+.navbar a {
+  float: center;
+  font-size: 25px;
+  color: rgba(158, 155, 155, 0.5);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 60px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #5467F5;
+}
+
+.dropbtn:hover {
+  height: 140px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: rgba(158, 155, 155, 0.8);
+  width: 100%;
+    height: 360px;
+  position: fixed;
+ top: 174px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: solid 6px #5467F5;
+    border-top: solid 6px #5467F5;
+ overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.column {
+  width: 220px;
+  padding: 10px;
+  height: 350px;
+  z-index: 999;
+  position: relative;
+  left: 100px;
+  top: -10px;
+  margin-left: 30px;
+ 	overflow: hidden;
+}
+
+.column a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 100%) {
+  .column {
+    width: 100%;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+
+}
+
+/* 네비끝 */
+
+
+.footer01 {
+  text-align: center;
+  padding-top: 50px;
+  background-color: #333;
+  width: max;
+   min-width: 1080px;
+}
+.footer01 a {
+  color: white;
+  font-size: 14px;
+  margin: 0 8px 0 8px;
+}
+.footer01 ul,
+li {
+  display: inline-block;
+}
+.footer01 li + li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  margin: 0 5px 0 2px;
+  background-color: rgba(192, 186, 186, 0.333);
+  vertical-align: -1px;
+}
+.footer02 {
+  background-color: #333; padding-bottom: 80px;
+  color: rgba(158, 155, 155, 1);
+  text-align: center;
+  font-size: 14px;
+  min-width: 1080px;
+  
+}
+.footer02 ul {
+  margin: 0;
+  padding: 20px 0 40px 0;
+  color: rgba(158, 155, 155, 1);
+}
+.footer02 li {
+  padding: 0 3px;
+  color: rgba(158, 155, 155, 1);
+}
+.footer02 a {
+  color: gray;
+  text-decoration: none;
+}
+
+.address, .copy {
+	color: #777;
+}
+
+
+
+
+
+
+

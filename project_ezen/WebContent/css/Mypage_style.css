@@ -1,0 +1,159 @@
+
+.mypage_header_img {
+     min-width: 1080px;  margin-top:180px;
+     height: 300px;
+     background-image: url(http://www.hellogym.com/default/img/_designcoco/images/sub_top_bg.jpg);
+     background-repeat: no-repeat;
+     background-position: center; background-size: 1920px 500px;
+}
+  
+.mypage_wrap {
+	margin: 0 auto; width: 100%; margin-top: 50px; 
+}
+.mypage_menu {
+	width: 1130px; margin: 0 auto;
+}
+.mypage_menutable {
+      width: 190px; height: 150px; border: 3px solid black;
+			margin-top: 100px;
+			margin-right: 85px;
+			margin-bottom: 100px;
+    }
+.mypage_wrap th {
+      width: 100px; height: 64px; text-align: center; padding: 20px;
+      background-color: #fafafa; color: #555;   	
+    }
+		.mypage_menu {
+			display: flex; 
+			justify-content: center;
+		}
+		
+		.mypage_member {
+			margin-left: 200px;
+		}
+		.mypage_member th {
+			width: 200px;
+		}
+		.mypage_member td {
+			width: 300px;
+		}
+		.mypage_member_table {
+			margin-top: 150px;
+			border: 3px solid black;
+		}
+		.mypage_member_table input {
+			width: 120px;
+		}
+		.mypage_member_table td {
+			width: 450px;
+		}
+/* 쿠폰함 */
+		.mypage_popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+	margin-left: 300px;
+}
+.mypage_popup .mypage_popuptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.mypage_popup .mypage_popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.mypage_popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.mypage_member_table th {
+	border-bottom: 1px solid gray;
+	width: 150px;
+}
+.mypage_member_table td {
+	border-bottom: 1px solid gray;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+/* 마이페이지 - 회원정보 영역 끝 */
+
+/* /mypage/mypage.jsp 끝 */
+
+/* 개인정보 수정 */
+.mypage_modify_table {
+	margin-top: 150px;
+	border: 3px solid black;
+}
+.mypage_modify_table input {
+	width: 250px;
+}
+.mypage_modify_table td {
+	width: 450px;
+}
+.mypage_modify_table th {
+width: 150px;
+}
+
+.mypage_modify_table td label input {
+    margin-right: -10px; width:50px;
+}
+.mypage_pass {
+	margin: 20px auto; 
+	
+} 
+.mypage_pass td {
+	width: 350px;
+}
+.submit {
+	text-align: center;
+	position: relative;
+	/* left: 100px; */
+}
+
+/* 비밀번호 수정 */
+
+.mypage_passch {
+	margin-left: auto;
+	margin-right: auto;
+  margin-top: 300px;
+}
+.mypage_passch td {
+	width: 200px;
+}
+.pass_btn {
+	text-align: center;
+	position: relative;
+	left: 100px;
+}
+
+
+
+
+

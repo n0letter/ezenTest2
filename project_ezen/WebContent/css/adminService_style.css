@@ -1,0 +1,382 @@
+/* /admin_service/admin_inquiry.jsp 시작 */
+
+/* 고객센터 - 1:1문의 영역 시작 */
+
+    .admin_inquiry_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .adminService_small {
+      color: #5467F5;
+    } 
+    .admin_inquiry_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-right: 10px;
+      display: flex;
+      justify-content : space-between;
+    }
+    .admin_inquiry_title h4 {
+      color: #58595B;   
+    }  
+    /* 표 */
+    .admin_inquiry_table {    
+      width: 850px; 
+      margin: 0 auto;
+    }
+    .admin_inquiry_table_wrap {
+      width: 850px;  
+      border-top: 3px solid rgba(116, 116, 116, 0.5);
+    }
+    .admin_inquiry_table_wrap th {
+      height: 50px;
+      padding: 7px;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);   
+    }
+    .admin_inquiry_table_wrap td {   
+      height: 50px;
+      padding: 7px;
+      text-align: center;
+      color: #58595B;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);
+    } 
+    /* 버튼 */
+   .admin_inquiry_btn {
+      width: 170px;
+      height: 30px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .admin_inquiry_btn:hover, .admin_inquiry_btn:active {
+      color: white;
+      background-color: #5467F5;
+    }
+
+/* 고객센터 - 1:1문의 영역 끝 */
+
+/* /admin_service/admin_inquiry.jsp 끝 */
+
+/* /admin_service/admin_inquiry_view.jsp 시작 */
+
+/* 고객센터 - 1:1문의 상세보기 영역 시작 */
+
+    .admin_inquiry_view_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .admin_inquiry_view_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    .admin_inquiry_view_title h4 {
+      color: #58595B;   
+    }  
+    /* 질문 */
+    .admin_inquiry_view_table {
+      width: 850px;
+      height: 300px;
+      margin: 0 auto;
+      border-top: 3px solid rgba(158, 155, 155, 0.5);
+      border-bottom: 3px solid rgba(158, 155, 155, 0.5);
+    }
+    .admin_inquiry_view_top {
+      display: flex;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);  
+    }
+    .admin_inquiry_view_left {
+      width: 25%;
+      height: 40px;
+      padding-top: 7px;
+      font-weight: bold;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-right: 1px solid rgba(116, 116, 116, 0.5);  
+    }
+    .admin_inquiry_view_right {
+      padding: 7px 0 0 18px;
+      color: #58595B;
+    }
+    .admin_inquiry_view_content {
+      padding: 12px 20px;
+      color: #58595B;
+    }
+    /* 답변 */
+    .admin_inquiry_view_wrap hr {
+      width: 850px;
+      margin: 20px auto;
+    }
+    .admin_inquiry_view_Answer {
+      width: 850px;
+      margin: 0 auto;
+    }
+    .admin_inquiry_Answer_content {
+      width: 850px;
+      height: 110px;
+      padding: 12px 20px;
+      color: #58595B;
+      outline: none;
+    }
+    .Answer_bottom {
+      margin-top: 10px;
+      display: flex;
+      justify-content : space-between;
+    }
+    /* 답변상태 */
+    .iselect {
+      width: 120px;
+      height: 28px;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #58595B;
+      outline: none;
+    }
+    /* 버튼 */
+    .iAnswersub {
+      width: 100px;
+      height: 28px;
+      font-size: 16px;
+      color: white;
+      background-color: #5467F5;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .iAnswerbtn {
+      width: 60px;
+      height: 28px;
+      margin-left: 50px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    
+/* 고객센터 - 1:1문의 상세보기 영역 끝 */
+
+/* /admin_service/admin_inquiry_view.jsp 끝 */
+
+/* /admin_service/admin_faq.jsp 시작 */
+
+/* 고객센터 - FAQ 영역 시작 */
+
+    .admin_faq_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .admin_faq_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    .admin_faq_title h4 {
+      color: #58595B;   
+    } 
+    /* 표 */
+    .admin_faq_table {    
+      width: 850px; 
+      margin: 0 auto;
+    }
+    .admin_faq_table_wrap {
+      width: 850px;  
+      border-top: 3px solid rgba(116, 116, 116, 0.5);
+    }
+    .admin_faq_table th {
+      width: 25%;   
+      height: 40px;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);   
+    }
+    .admin_faq_table td {   
+      padding-left: 15px;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);
+      border-left: 1px solid rgba(116, 116, 116, 0.5);
+    } 
+    /* 버튼 */
+    .fwritebtn {
+      width: 90px;
+      height: 30px;
+      margin-top: 12px;
+      border-radius: 10px;
+      margin-left: 900px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .fwritebtn:hover, .fwritebtn:active {
+      color: white;
+      background-color: #5467F5;
+    }
+/* 고객센터 - FAQ 상세보기 영역 끝 */
+
+/* /admin_service/admin_faq.jsp 끝 */
+
+/* /admin_service/admin_faq_write.jsp 시작 */
+
+/* 고객센터 - FAQ글쓰기 영역 시작 */
+
+    .admin_faq_write_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .admin_faq_write_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    .admin_faq_write_title h4 {
+      color: #58595B;   
+    } 
+    /* 글쓰기 */
+    .admin_faq_write_content {    
+      width: 850px; 
+      margin: 0 auto;
+    }
+    .admin_faq_write_table {
+      width: 850px; 
+	  border-top: 3px solid rgba(116, 116, 116, 0.5); 
+	}
+	.admin_faq_write_table th {
+	  width: 25%;   
+	  height: 50px;
+	  text-align: center;
+	  color: #58595B;
+	  background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5); 
+	}
+	.admin_faq_write_td {
+	  padding-left: 15px;    
+      border-left: 1px solid rgba(116, 116, 116, 0.5);
+	}
+	.ftitle {
+	  width: 605px;
+      height: 28px;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #58595B;
+      outline: none;
+	}
+	/* 버튼 */
+	.fbuttons {
+	  margin: 10px auto;
+	}
+    .fwritesub {
+      width: 100px;
+      height: 28px;
+      margin-left: 370px;
+      font-size: 16px;
+      color: white;
+      background-color: #5467F5;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .fwritebutton {
+      width: 60px;
+      height: 28px;
+      margin-left: 315px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+	
+/* 고객센터 - FAQ글쓰기 영역 끝 */
+
+/* /admin_service/admin_faq_write.jsp 끝 */
+
+/* /admin_service/admin_faq_view.jsp 시작 */
+
+/* 고객센터 - FAQ상세보기 영역 시작 */
+
+    .admin_faq_view_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .admin_faq_view_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+    .admin_faq_view_title h4 {
+      color: #58595B;   
+    } 
+    /* 글쓰기 */
+    .admin_faq_view_content {    
+      width: 850px; 
+      margin: 0 auto;
+    }
+    .admin_faq_view_table {
+      width: 850px; 
+	  border-top: 3px solid rgba(116, 116, 116, 0.5); 
+	}
+	.admin_faq_view_table th {
+	  width: 25%;   
+	  height: 50px;
+	  text-align: center;
+	  color: #58595B;
+	  background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5); 
+	}
+	.admin_faq_view_td {
+	  padding-left: 15px;    
+      border-left: 1px solid rgba(116, 116, 116, 0.5);
+	}
+	.fviewtitle {
+	  width: 605px;
+      height: 28px;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #58595B;
+      outline: none;
+	}
+	/* 버튼 */
+	.fviewbuttons {
+	  margin: 10px auto;
+	}
+    .fviewsubA {
+      width: 100px;
+      height: 28px;
+      margin-left: 320px;
+      font-size: 16px;
+      color: white;
+      background-color: #5467F5;
+      border: 1px solid #5467F5;
+      outline: none;
+    }  
+    .fviewsubB {
+      width: 100px;
+      height: 28px;
+      margin-left: 10px;
+      font-size: 16px;
+      color: white;
+      background-color: #5467F5;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .fviewbutton {
+      width: 60px;
+      height: 28px;
+      margin-left: 252px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+	
+/* 고객센터 - FAQ상세보기 영역 끝 */
+
+/* /admin_service/admin_faq_view.jsp 끝 */

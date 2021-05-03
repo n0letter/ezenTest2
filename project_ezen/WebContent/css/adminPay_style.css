@@ -1,0 +1,500 @@
+/* /admin_payment/admin_paymain.jsp 시작 */
+
+/* 결제관리 - 결제메인 영역 시작 */
+
+    .paymain_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .adminPay_small {
+      color: #5467F5;
+    }
+    /* 회원권 결제 수 */
+    .paymain_top {
+      width: 580px;
+      margin: 0 auto;
+      border: 3px dashed rgba(158, 155, 155, 0.5);
+    }
+    .paymain_top_A {
+      margin-top: 20px;
+      padding-left: 30px;
+      color: #58595B;
+    }
+    .paymain_square {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+   .paymain_square_text {
+      width: 120px;
+      height: 49px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: #58595B;
+      border-bottom: 1px solid rgba(158, 155, 155, 0.5);
+   } 
+   .paymain_square_text_A {
+      width: 120px;
+      height: 49px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      color: #58595B;
+      border-bottom: 1px solid rgba(158, 155, 155, 0.5);
+   }
+   .paymain_top_B {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+   }
+   .paymain_Shape {
+      width: 120px;
+      height: 120px;
+      line-height:118px;
+      margin: 0 auto 20px auto;
+      border-radius: 30%;
+      background-color: rgba(158, 155, 155, 0.5);
+   }
+   .paymain_Shape_text {
+      font-size: 25px;
+      color: white;      
+   }
+   .paymain_Shape_text_A {
+      font-size: 25px;
+      font-weight: bold;
+      color: white; 
+   }
+   .paymain_Shape_A {
+      height: 120px;
+      line-height:118px;
+   }    
+   .paymain_Shape_B {
+      width: 120px;
+      height: 120px;
+      line-height:118px;
+      margin: 0 auto 20px auto;
+      border-radius: 30%;
+      background-color: #5467F5;
+   }
+   .paymain_Symbol {
+      font-size: 25px;
+      font-weight: bold;
+      color: #58595B; 
+   } 
+   /* 결제내역 보러가기 */
+   .paymain_bottom {
+      width: 650px;
+      height: 102px;
+      margin: 25px auto;
+      border-top: 3px solid rgba(158, 155, 155, 0.5);
+      border-bottom: 3px solid rgba(158, 155, 155, 0.5);
+   } 
+   .paymain_bottom_A {
+      margin-top: 6px;
+      padding-bottom: 30px;
+      padding: 5px 20px;
+      display: flex;
+      justify-content : space-between; 
+      border-bottom: 1px solid rgba(158, 155, 155, 0.5);
+   }
+   .paymain_bottom_A h5, .paymain_bottom_B  h5 {
+      font-weight: bold;
+      color: #58595B;
+   }
+   .paymain_bottom_B {
+      margin-top: 11px;
+      padding: 0 20px;
+      display: flex;
+      justify-content : space-between;
+   }   
+   /* 버튼 */
+   .paymain_btn {
+      width: 76px;
+      height: 26px;
+      font-size: 15px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .paymain_btn:hover, .paymain_btn:active {
+      color: white;
+      background-color: #5467F5;
+    }
+    
+/* 결제관리 - 결제메인 영역 끝 */
+
+/*  /admin_payment/admin_paymain.jsp 끝 */
+
+/* /admin_payment/admin_general.jsp 시작 */
+
+/* 결제관리 - 일반회원권 영역 시작 */
+
+    .paygenral_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .paygenral_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-right: 10px;
+      display: flex;
+      justify-content : space-between;
+    }
+    .paygenral_title h4 {
+      color: #58595B;   
+    }  
+     /* 일반회원권 표 */
+    .paygenral_table {    
+      width: 850px; 
+      margin: 0 auto;
+    }
+    .paygenral_table_wrap {
+      width: 850px;  
+      border-top: 3px solid rgba(116, 116, 116, 0.5);
+    }
+    .paygenral_table_wrap th {
+      height: 50px;
+      padding: 7px;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);   
+    }
+    .paygenral_table_wrap td {   
+      height: 50px;
+      padding: 7px;
+      text-align: center;
+      color: #58595B;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);
+    } 
+    .off-payscreen {
+      display: none;
+    }
+    #paynav {
+      width: 850px; 
+      margin-top: 15px;
+      text-align: center;
+    }
+    #paynav a {
+      display: inline-block;
+      padding: 3px 5px;
+      margin-right: 10px;
+      color: #58595B;
+      text-decoration: none;
+    }    
+    #paynav a.active {
+      background: #5467F5;
+      color: white;
+    }
+    /* 버튼 */
+   .paygenral_btn {
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .paygenral_btn:hover, .paygenral_btn:active {
+      color: white;
+      background-color: #5467F5;
+    }
+
+/* 결제관리 - 일반회원권 영역 끝 */
+
+/*  /admin_payment/admin_general.jsp 끝 */
+
+/* /admin_payment/admin_general_add.jsp 시작 */
+
+/* 결제관리 - 일반회원권추가 영역 시작 */
+
+    .genraladd_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .genraladd_title {
+      width: 800px;
+      margin: 20px auto;
+    }
+    .genraladd_title h4 {
+      color: #58595B;   
+    }  
+    /* 표 */
+    .genraladd_table {    
+      width: 800px; 
+      margin: 0 auto;
+      border-top: 3px solid rgba(116, 116, 116, 0.5);
+    }
+    .genraladd_table_wrap {
+      width: 800px; 
+    }
+    .genraladd_table th {
+      width: 20%;
+      height: 50px;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);   
+    }
+    .genraladd_table td {   
+      height: 50px;
+      padding-left: 15px;
+      color: #58595B;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);
+    } 
+    .gselect, .gtext, .gdate {
+	  width: 160px;
+      height: 28px;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #58595B;
+      outline: none;
+	}
+	.gspanA {
+	  margin-right: 6px;
+	  font-weight: bold;
+	  color: red;  
+	}
+    .gCoupon {
+      width: 125px;
+      height: 28px;
+      font-size: 15px;
+      padding-right: 10px;
+      color: #58595B;
+      text-align: right;
+      outline: none;
+    }
+    .gspanB {
+      margin-left: 2px;
+      color: #58595B;
+    }
+    .gtextA {
+      width: 139px;
+      height: 28px;
+      font-size: 15px;
+      padding-right: 10px;
+      color: #58595B;
+      text-align: right;
+      outline: none;
+    }
+    /* 버튼 */
+    .gaddbuttons {
+      width: 800px;
+      margin: 18px 0;
+    }
+   .gaddsub {
+      width: 100px;
+      height: 30px;
+      margin-left: 365px;
+      font-size: 16px;
+      color: white;
+      background-color: #5467F5;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .gaddbtn {
+      width: 60px;
+      height: 30px;
+      margin-left: 270px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+
+/* 결제관리 - 일반회원권추가 영역 끝 */
+
+/*  /admin_payment/admin_general_add.jsp 끝 */
+
+/* /admin_payment/admin_special.jsp 시작 */
+
+/* 결제관리 - 스페셜회원권 영역 시작 */
+
+    .payspecial_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .payspecial_title {
+      width: 850px;
+      margin: 0 auto;
+      padding-right: 10px;
+      display: flex;
+      justify-content : space-between;
+    }
+    .payspecial_title h4 {
+      color: #58595B;   
+    }  
+     /* 스페셜회원권 표 */
+    .payspecial_table {    
+      width: 850px; 
+      margin: 0 auto;
+    }
+    .payspecial_table_wrap {
+      width: 850px;  
+      border-top: 3px solid rgba(116, 116, 116, 0.5);
+    }
+    .payspecial_table_wrap th {
+      height: 50px;
+      padding: 7px;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);   
+    }
+    .payspecial_table_wrap td {   
+      height: 50px;
+      padding: 7px;
+      text-align: center;
+      color: #58595B;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);
+    } 
+    .off-payscreen {
+      display: none;
+    }
+    #paynav {
+      width: 850px; 
+      margin-top: 15px;
+      text-align: center;
+    }
+    #paynav a {
+      display: inline-block;
+      padding: 3px 5px;
+      margin-right: 10px;
+      color: #58595B;
+      text-decoration: none;
+    }    
+    #paynav a.active {
+      background: #5467F5;
+      color: white;
+    }
+    /* 버튼 */
+   .payspecial_btn {
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .payspecial_btn:hover, .payspecial_btn:active {
+      color: white;
+      background-color: #5467F5;
+    }
+
+/* 결제관리 - 스페셜회원권 영역 끝 */
+
+/*  /admin_payment/admin_special.jsp 끝 */
+
+/* /admin_payment/admin_special_add.jsp 시작 */
+
+/* 결제관리 -스페셜회원권추가 영역 시작 */
+
+    .specialadd_wrap {
+      width: 1130px;
+      margin: 130px auto;
+    }
+    .specialadd_title {
+      width: 800px;
+      margin: 20px auto;
+    }
+    .specialadd_title h4 {
+      color: #58595B;   
+    }  
+    /* 표 */
+    .specialadd_table {    
+      width: 800px; 
+      margin: 0 auto;
+      border-top: 3px solid rgba(116, 116, 116, 0.5);
+    }
+    .specialadd_table_wrap {
+      width: 800px; 
+    }
+    .specialadd_table th {
+      width: 20%;
+      height: 50px;
+      text-align: center;
+      color: #58595B;
+      background-color: #fafafa;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);   
+    }
+    .specialadd_table td {   
+      height: 50px;
+      padding-left: 15px;
+      color: #58595B;
+      border-bottom: 1px solid rgba(116, 116, 116, 0.5);
+    } 
+    .sselect, .stext, .sdate {
+	  width: 160px;
+      height: 28px;
+      font-size: 15px;
+      padding-left: 10px;
+      color: #58595B;
+      outline: none;
+	}
+	.sspanA {
+	  margin-right: 6px;
+	  font-weight: bold;
+	  color: red;  
+	}
+    .sCoupon {
+      width: 125px;
+      height: 28px;
+      font-size: 15px;
+      padding-right: 10px;
+      color: #58595B;
+      text-align: right;
+      outline: none;
+    }
+    .sspanB {
+      margin-left: 2px;
+      color: #58595B;
+    }
+    .stextA {
+      width: 139px;
+      height: 28px;
+      font-size: 15px;
+      padding-right: 10px;
+      color: #58595B;
+      text-align: right;
+      outline: none;
+    }
+    /* 버튼 */
+    .saddbuttons {
+      width: 800px;
+      margin: 18px 0;
+    }
+   .saddsub {
+      width: 100px;
+      height: 30px;
+      margin-left: 365px;
+      font-size: 16px;
+      color: white;
+      background-color: #5467F5;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+    .saddbtn {
+      width: 60px;
+      height: 30px;
+      margin-left: 270px;
+      font-size: 16px;
+      color: #5467F5;
+      background-color: white;
+      border: 1px solid #5467F5;
+      outline: none;
+    }
+
+/* 결제관리 - 스페셜회원권추가 영역 끝 */
+
+/*  /admin_payment/admin_special_add.jsp 끝 */
